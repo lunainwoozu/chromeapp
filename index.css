@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+*{margin: 0; padding: 0;}
+
+body{
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #c7ecee;
+    font-family: 'Lora', serif;
+    color: #eee;
+    text-shadow: 1px 1px 5px #000;
+}
+ul{
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+button{
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+}
+input{
+    border: none;
+    background-color: transparent;
+    border-bottom: #eee 1px solid;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    color: #eee;
+    width: 100%;
+}
+
+input::placeholder{
+    color: #eee;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn .5s linear;
+}
+
+.take{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 430px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.js-weather{
+    display: inline-block;
+    text-align: right;
+    font-size: 12px;
+    width: 98%;
+}
+
+.js-clock h1{
+    font-family: 'Lora', serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+.context{
+    position: relative;
+    float: left;
+    width: 30%;
+    line-height: 1.5;
+}
+
+.form, .greeting {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+.js-toDoForm{
+    margin-top: 20px;
+}
+
+.list{
+    position: relative;
+    float: right;
+    width: 68%;
+    line-height: 1.5;
+}
+.js-toDoList{
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    padding: 5px 0 5px 5px;
+}
+
+.js-toDoList li{
+    text-align: justify;
+}
