@@ -32,7 +32,9 @@ input{
     color: #eee;
     width: 100%;
 }
-
+input:focus{
+    border: none;
+}
 input::placeholder{
     color: #eee;
 }
